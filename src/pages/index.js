@@ -14,7 +14,7 @@ const IndexPage = () => (
       }}
     >
       <p>Project deliverables will be here</p>
-      <a href="https://github.com/awave1/cpsc481-project/raw/master/TeamContract.pdf">
+      <a href="https://github.com/awave1/cpsc481-project/blob/master/content/TeamContract.pdf">
         Team Contract
       </a>
     </div>

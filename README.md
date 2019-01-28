@@ -2,4 +2,4 @@
   CPSC481 Project Site
 </h1>
 
-[Team Contract](https://github.com/awave1/cpsc481-project/raw/master/TeamContract.pdf)
+[Team Contract](https://github.com/awave1/cpsc481-project/blob/master/content/TeamContract.pdf)
