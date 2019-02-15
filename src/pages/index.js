@@ -1,22 +1,36 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Card from '../components/Card';
 
-import Layout from '../components/layout';
+const IndexPage = ({ data }) => {
+  const {
+    allMarkdownRemark: { edges },
+  } = data;
+  const content = edges
+    .filter(edge => !!edge.node.frontmatter.date)
+    .map(edge => <Card key={edge.node.id} post={edge.node} />);
 
-const IndexPage = () => (
-  <>
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        maxWidth: `300px`,
-        marginBottom: `1.45rem`,
-      }}
-    >
-      <p>Project deliverables will be here</p>
-      <Link to="/teamContract">Team Contract</Link>
-    </div>
-  </>
-);
+  return <div style={{ marginTop: 45 }}>{content}</div>;
+};
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`;
