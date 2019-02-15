@@ -1,23 +1,63 @@
 module.exports = {
   pathPrefix: '/cpsc481-project',
   siteMetadata: {
-    title: `CPSC481 Project`,
-    description: ``,
-    author: ``,
+    title: 'CPSC481 Project',
+    description: '',
+    author: '',
+    siteUrl: 'https://awave1.github.io/cpsc481-project',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-plugin-layout',
       options: {
-        name: `files`,
-        path: `${__dirname}/content`,
+        component: require.resolve('./src/components/Layout'),
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-transformer-remark',
+      strategy: 'img',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-draw',
+            options: {
+              mermaid: {
+                theme: 'forest',
+              },
+            },
+          },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              inlineCodeMarker: '>',
+              classPrefix: 'language-',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-katex',
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/content/`,
+      },
+    },
+    'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
@@ -27,8 +67,5 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 };
