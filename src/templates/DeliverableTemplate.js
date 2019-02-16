@@ -79,7 +79,6 @@ function Template(props) {
 
   return (
     <Article>
-      <PostHeader title={title} date={date} />
       <div
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: html }}
