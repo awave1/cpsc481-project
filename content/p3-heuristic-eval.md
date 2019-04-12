@@ -1,6 +1,6 @@
 ---
 title: 'P3.2: Quick Pay - Heuristic Evaluation'
-date: '2019-03-17'
+date: '2019-03-22'
 ---
 
 # Quick Pay - Heuristic Evaluation
@@ -15,7 +15,7 @@ date: '2019-03-17'
 
 ---
 
-### Visibility of system status
+## Visibility of system status
 
 - There is no way to tell when the messages were sent or if it even sent/read. Like most messaging apps, there should be a way for the user to tell if their message was successfully transmitted and the time all messages were sent, and possibly add a read to know that the other user has successfully received the message.
 
@@ -35,7 +35,7 @@ date: '2019-03-17'
   <img src="p3_image_2.png" />
 </div>
 
-### Match between system and the real world
+## Match between system and the real world
 
 - It is unclear if this is the name of the company the user is banking under or the name of the specific branch. Providing a dropdown menu of the possible selections would help if it is the former.
 
@@ -47,11 +47,11 @@ date: '2019-03-17'
 
 - The ‘Dollar’ icon still feels ambiguous in a sense that it doesn’t match up with the _transfer_ of money. A possible fix can be changing it to a ‘Transfer’-like icon that includes the dollar sign (although the user is greeted with what these icons mean anyways, it should be more intuitive)
 
-### User control and freedom
+## User control and freedom
 
 - If the user accidentally clicks on the add bank card info, or if they added a few information and decided to not actually commit, there is no cancel or go back option. Same for the register account.
 
-### Consistency and standards
+## Consistency and standards
 
 - Card deletion is done via tapping on card, which is not the usual pattern. Instead, there needs to be an edit button that will allow users to delete items.
 
@@ -71,7 +71,7 @@ date: '2019-03-17'
 
 - Having wallet and bank information under settings seems counterintuitive, since payment features are the main draw of the app. Payment, bank, and wallet settings may be better served as their own tab, since to many users, "settings" is used as a fallback when they cannot find main features.
 
-### Error prevention
+## Error prevention
 
 - No good error prevention in case someone accidentally pressed delete card. A confirmation popup would be expected.
 
@@ -81,15 +81,15 @@ date: '2019-03-17'
 
 - User cannot close dialog that prompts to request or send money from/to another user
 
-### Recognition rather than recall
+## Recognition rather than recall
 
 - Users will have to wonder what plus sign button indicates or what it does. For better UX, it needs to have better icon.
 
-### Flexibility and efficiency of use
+## Flexibility and efficiency of use
 
 - The ‘request’ function feels useless since a person can just explicitly say they want money for whatever reason and the other person can either send or not send.
 
-### Aesthetic and minimalist design
+## Aesthetic and minimalist design
 
 - Text on the initial pages is appears slightly off-center, which might throw off some people. Text should be aligned.
 
@@ -117,13 +117,13 @@ date: '2019-03-17'
 
 - Text messages display too much. Should be one - two lines maximum so that the display does not feel cluttered.
 
-### Help users recognize, diagnose, and recover from errors
+## Help users recognize, diagnose, and recover from errors
 
 - Nothing is made for this. but understandable for just a simply hi-fidelity prototype, try to add one for when you create the actual version, for stuff like adding a bad card or poor registration.
 
 - User should be able to cancel a request as well
 
-### Help and documentation
+## Help and documentation
 
 - Not much help presented, unclear why user needs to enter a phone number
 
