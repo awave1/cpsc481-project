@@ -21,7 +21,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "chart.js": "^2.7.3",
     "gatsby-plugin-layout": "^1.0.11",
-    "gatsby-plugin-mdx": "^1.0.1",
+    "gatsby-plugin-mdx": "^2.14.1",
     "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-plugin-typography": "^2.2.4",
     "gatsby-remark-draw": "^1.0.15",
