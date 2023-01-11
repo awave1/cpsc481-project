@@ -30,7 +30,7 @@
     "gatsby-remark-katex": "^3.0.1",
     "gatsby-remark-prismjs": "^3.1.4",
     "gatsby-remark-sequence": "^0.0.2",
-    "gatsby-transformer-remark": "^2.1.17",
+    "gatsby-transformer-remark": "^5.25.1",
     "katex": "^0.10.0",
     "prismjs": "^1.15.0",
     "react-chartjs-2": "^2.7.4",
